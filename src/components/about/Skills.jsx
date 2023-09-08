@@ -1,5 +1,5 @@
 import { Box, Image, Flex } from "@chakra-ui/react";
-import data from "../../../public/data";
+import data from "/data.js?url";
 import { motion } from "framer-motion";
 import { skillsVariant } from "../../utils/FramerVariants";
 
