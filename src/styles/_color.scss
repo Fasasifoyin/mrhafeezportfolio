@@ -1,0 +1,36 @@
+$colors: (
+  "black": #000,
+  "purple": rgb(10, 25, 205),
+  "white": #fff,
+  "blue": rgba(145, 205, 249, 0.5),
+  "black-light": rgba(0, 0, 0, 0.4),
+  "black-veryLight": rgba(0, 0, 0, 0.15),
+  "light-dark": rgba(0, 0, 0, 0.05),
+);
+
+@each $key, $val in $colors {
+  .text-#{$key} {
+    color: $val !important;
+  }
+
+  .border-#{$key} {
+    border: 1px solid $val !important;
+  }
+
+  .bg-#{$key} {
+    background-color: $val;
+  }
+
+  @for $i from 1 through 9 {
+    .text-#{$key}-light-#{$i} {
+      color: mix(white, $val, $i * 10%) !important;
+    }
+
+    .bg-#{$key}-light-#{$i}-hover {
+      &:hover {
+        background-color: mix(white, $val, $i * 10%) !important;
+        transition: 0.2s ease-in all !important;
+      }
+    }
+  }
+}

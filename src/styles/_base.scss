@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Radio+Canada:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none !important;
+}
+
+h2,
+h3,
+.tiny-text {
+  font-family: "Radio Canada", sans-serif !important;
+}
+
+p,
+.small-text {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.scrollbody {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbody::-webkit-scrollbar {
+  display: none;
+}
+
+.cc-container {
+  width: 100% !important;
+  max-width: 1440px !important;
+  margin: 0 auto;
+}
+
+.page-alignment {
+  padding: 0 1.25rem;
+
+  @media (min-width: 768px) {
+    padding: 0 3.125rem;
+  }
+
+  @media (min-width: 1280px) {
+    padding: 0 6.25rem !important;
+  }
+}
