@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Box, Flex } from "@chakra-ui/react";
 import { Link } from "react-scroll";
-import data from "/data.js?url";
+import data from "../../utils/data";
 import { useState } from "react";
 import useWindowSize from "../../hooks/useWindowSize";
 

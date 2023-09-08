@@ -1,5 +1,5 @@
 import { Box, Flex, Icon } from "@chakra-ui/react";
-import data from "/data.js?url";
+import data from "../../utils/data"
 import { MdLocationPin } from "react-icons/md";
 import { SlCalender } from "react-icons/sl";
 import { BsBuildings } from "react-icons/bs";

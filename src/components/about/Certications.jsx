@@ -1,5 +1,5 @@
 import { Box, Flex, Image, SimpleGrid } from "@chakra-ui/react";
-import data from "/data.js?url";
+import data from "../../utils/data";
 import { motion } from "framer-motion";
 import { certificationVariant } from "../../utils/FramerVariants";
 
