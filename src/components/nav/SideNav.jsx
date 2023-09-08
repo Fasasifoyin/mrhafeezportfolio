@@ -7,7 +7,7 @@ import {
 } from "../../utils/FramerVariants";
 import { motion } from "framer-motion";
 import Links from "./Links";
-import useWindowSize from "../../Hooks/useWindowSize";
+import useWindowSize from "../../hooks/useWindowSize";
 
 const SideNav = ({ setOpen }) => {
   const { width } = useWindowSize();

@@ -3,7 +3,7 @@ import { Box, Flex } from "@chakra-ui/react";
 import { Link } from "react-scroll";
 import data from "/data.js?url";
 import { useState } from "react";
-import useWindowSize from "../../Hooks/useWindowSize";
+import useWindowSize from "../../hooks/useWindowSize";
 
 const Links = ({ isMobile, setOpen }) => {
   const [line, setLine] = useState(-1);

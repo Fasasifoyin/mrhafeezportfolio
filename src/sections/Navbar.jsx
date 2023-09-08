@@ -4,7 +4,7 @@ import { AnimatePresence } from "framer-motion";
 import Links from "../components/nav/Links";
 import { Sling as Hamburger } from "hamburger-react";
 import SideNav from "../components/nav/SideNav";
-import useWindowSize from "../Hooks/useWindowSize";
+import useWindowSize from "../hooks/useWindowSize";
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
