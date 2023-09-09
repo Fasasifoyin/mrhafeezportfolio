@@ -1,22 +1,13 @@
-export const navVariants = {
-  initial: {
-    opacity: 0,
-    y: "-100vh",
-    transition: {
-      type: "spring",
-      stiffness: 300,
-      damping: 140,
-    },
-  },
+export const sideNavSmVariants = {
+  key: "sideNavSm",
+  initial: { opacity: 0 },
   animate: {
     opacity: 1,
-    y: 0,
-    transition: {
-      type: "spring",
-      stiffness: 50,
-      damping: 12,
-      delay: 0.5,
-    },
+    transition: { duration: 0.4, ease: "anticipate" },
+  },
+  exit: {
+    opacity: 0,
+    transition: { duration: 0.3 },
   },
 };
 
@@ -39,45 +30,33 @@ export const sideNavVariants = {
   },
 };
 
-export const sideNavSmVariants = {
-  key: "sideNavSm",
-  initial: { opacity: 0 },
+export const slideBottomVariant = (delay, start, duration) => ({
+  initial: {
+    opacity: 0,
+    y: start,
+  },
   animate: {
     opacity: 1,
-    transition: { duration: 0.4, ease: "anticipate" },
-  },
-  exit: {
-    opacity: 0,
-    transition: { duration: 0.3 },
-  },
-};
-
-export const stagger = (delay) => ({
-  hidden: {
-    y: 30,
-    opacity: 0,
-  },
-  visible: {
     y: 0,
-    opacity: 1,
     transition: {
-      duration: 0.4,
-      delay,
+      delay: 0.1 * delay,
+      duration: duration,
+      type: "tween",
     },
   },
 });
 
-export const heroImage = (xaxix) => ({
+export const slideSides = (delay, start, duration) => ({
   initial: {
-    x: xaxix,
+    x: start,
     opacity: 0,
   },
   animate: {
     x: 0,
     opacity: 1,
     transition: {
-      delay: 0.5,
-      duration: 1,
+      delay: 0.05 * delay,
+      duration: duration,
     },
   },
 });
@@ -91,54 +70,29 @@ export const skillsVariant = (index) => ({
     opacity: 1,
     y: 0,
     transition: {
-      delay: 0.1 * index,
+      delay: 0.05 * index,
     },
   },
 });
 
-export const certificationVariant = (index) => ({
+export const navVariants = {
   initial: {
     opacity: 0,
-    x: "-100px",
-  },
-  animate: {
-    opacity: 1,
-    x: 0,
+    y: "-100vh",
     transition: {
-      delay: 0.15 * index,
-      ease: "anticipate",
+      type: "spring",
+      stiffness: 300,
+      damping: 140,
     },
-  },
-});
-
-export const resumeVariant = (index) => ({
-  initial: {
-    opacity: 0,
-    y: "70px",
   },
   animate: {
     opacity: 1,
     y: 0,
     transition: {
-      delay: 0.15 * index,
-      duration: 0.5,
-      type: "tween",
+      type: "spring",
+      stiffness: 50,
+      damping: 12,
+      delay: 0.5,
     },
   },
-});
-
-export const portfolioImage = (xaxis) => ({
-  initial: {
-    opacity: 0,
-    x: xaxis,
-  },
-  animate: {
-    opacity: 1,
-    x: 0,
-    y: 0,
-    transition: {
-      delay: 0.1,
-      duration: 0.5,
-    },
-  },
-});
+};

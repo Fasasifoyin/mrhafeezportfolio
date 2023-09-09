@@ -3,7 +3,7 @@ import { Box, Flex, Button } from "@chakra-ui/react";
 import {
   sideNavSmVariants,
   sideNavVariants,
-  stagger,
+  slideBottomVariant,
 } from "../../utils/FramerVariants";
 import { motion } from "framer-motion";
 import Links from "./Links";
@@ -29,9 +29,9 @@ const SideNav = ({ setOpen }) => {
       >
         <Box
           as={motion.div}
-          variants={stagger(0.4)}
-          initial="hidden"
-          animate="visible"
+          variants={slideBottomVariant(4, 30, 0.4)}
+          initial="initial"
+          animate="animate"
         >
           <Links isMobile setOpen={setOpen} />
         </Box>
@@ -39,9 +39,9 @@ const SideNav = ({ setOpen }) => {
           direction={"column"}
           gap={"15px"}
           as={motion.div}
-          variants={stagger(0.5)}
-          initial="hidden"
-          animate="visible"
+          variants={slideBottomVariant(5, 30, 0.4)}
+          initial="initial"
+          animate="animate"
         >
           <p className="text-purple-light-5 fw-600">SAY HELLO</p>
           <h4 className="small-text">08024567899</h4>
@@ -49,9 +49,9 @@ const SideNav = ({ setOpen }) => {
         </Flex>
         <Box
           as={motion.div}
-          variants={stagger(0.6)}
-          initial="hidden"
-          animate="visible"
+          variants={slideBottomVariant(6, 30, 0.4)}
+          initial="initial"
+          animate="animate"
         >
           <Button
             size={"sm"}

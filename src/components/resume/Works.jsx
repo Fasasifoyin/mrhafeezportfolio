@@ -4,7 +4,7 @@ import { MdLocationPin } from "react-icons/md";
 import { SlCalender } from "react-icons/sl";
 import { BsBuildings } from "react-icons/bs";
 import { motion } from "framer-motion";
-import { resumeVariant } from "../../utils/FramerVariants";
+import { slideBottomVariant } from "../../utils/FramerVariants";
 
 const Works = () => {
   return (
@@ -12,7 +12,7 @@ const Works = () => {
       {data.resumes.map((each, index) => (
         <Flex
           as={motion.div}
-          variants={resumeVariant(index)}
+          variants={slideBottomVariant(index, 70, 0.5)}
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}

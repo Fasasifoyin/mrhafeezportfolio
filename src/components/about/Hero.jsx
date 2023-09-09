@@ -1,7 +1,8 @@
 import { Box, Button, Flex, Image } from "@chakra-ui/react";
 import useElementHeight from "../../hooks/useElementHeight";
 import { motion } from "framer-motion";
-import { heroImage } from "../../utils/FramerVariants";
+import { slideSides } from "../../utils/FramerVariants";
+import data from "../../utils/data";
 
 const Hero = () => {
   const { elementRef, elementWidth } = useElementHeight();
@@ -16,7 +17,7 @@ const Hero = () => {
     >
       <Flex
         as={motion.div}
-        variants={heroImage("-100%")}
+        variants={slideSides(10, "-100%", 1)}
         initial="initial"
         animate="animate"
         direction={"column"}
@@ -54,7 +55,7 @@ const Hero = () => {
       </Flex>
       <Flex
         as={motion.div}
-        variants={heroImage("100%")}
+        variants={slideSides(10, "100%", 1)}
         initial="initial"
         animate="animate"
         width={{ lg: "47%", base: "100%" }}
@@ -71,7 +72,7 @@ const Hero = () => {
             w={"100%"}
             h={"100%"}
             objectFit={"cover"}
-            src="https://res.cloudinary.com/dbxvk3apv/image/upload/v1694008794/Metaversus/photo-1557862921-37829c790f19_z8qhnd.jpg"
+            src={data.profileImage}
             borderRadius={"50%"}
           />
         </Box>

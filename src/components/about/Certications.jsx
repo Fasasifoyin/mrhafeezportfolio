@@ -1,7 +1,7 @@
 import { Box, Flex, Image, SimpleGrid } from "@chakra-ui/react";
 import data from "../../utils/data";
 import { motion } from "framer-motion";
-import { certificationVariant } from "../../utils/FramerVariants";
+import { slideSides } from "../../utils/FramerVariants";
 
 const Certications = () => {
   return (
@@ -11,7 +11,7 @@ const Certications = () => {
         {data.certifications.map((each, index) => (
           <Flex
             as={motion.div}
-            variants={certificationVariant(index)}
+            variants={slideSides(index, -100, 0.5)}
             initial="initial"
             whileInView="animate"
             viewport={{ once: true, amount: 0.25 }}

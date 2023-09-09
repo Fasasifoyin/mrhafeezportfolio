@@ -1,7 +1,11 @@
-import { Box, Flex, Image } from "@chakra-ui/react";
+import { Box, Flex, Icon, Image } from "@chakra-ui/react";
 import data from "../utils/data";
-import { portfolioImage, resumeVariant } from "../utils/FramerVariants";
+import {
+  slideBottomVariant,
+  slideSides,
+} from "../utils/FramerVariants";
 import { motion } from "framer-motion";
+import { AiOutlineLink } from "react-icons/ai";
 
 const Portfolio = () => {
   return (
@@ -26,12 +30,16 @@ const Portfolio = () => {
           >
             <Box
               as={motion.div}
-              variants={portfolioImage(index % 2 === 0 ? "-100%" : "100%")}
+              variants={slideSides(
+                0.1,
+                index % 2 === 0 ? "-100%" : "100%",
+                0.5
+              )}
               viewport={{ once: true }}
               initial="initial"
               whileInView="animate"
               width={{ base: "100%", sm: "85%", md: "48%" }}
-              h={{ md: "420px" }}
+              h={{ base: "auto", md: "420px" }}
             >
               <Image
                 w={"100%"}
@@ -42,7 +50,7 @@ const Portfolio = () => {
             </Box>
             <Box
               as={motion.div}
-              variants={resumeVariant(0.6667)}
+              variants={slideBottomVariant(0.1, 50, 0.5)}
               viewport={{ once: true }}
               initial="initial"
               whileInView="animate"
@@ -52,9 +60,12 @@ const Portfolio = () => {
                 <p className="fw-600">PROJECT</p>
                 <p className="fw-600 text-purple">{each.title}</p>
               </Box>
-              <Box p={"10px"} className="bg-light-dark">
+              <Box p={"10px"} className="bg-light-dark" mb={"10px"}>
                 <h4 className="small-text">{each.about}</h4>
               </Box>
+              <Flex justify={{ base: "end", md: "start" }}>
+                <Icon as={AiOutlineLink} boxSize={7} />
+              </Flex>
             </Box>
           </Flex>
         ))}

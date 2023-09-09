@@ -53,7 +53,9 @@ h3 {
   letter-spacing: 2px;
 }
 
-p {
+p,
+input,
+textarea {
   @include fluid-type($min_width, $max_width, 16px, 20px);
   line-height: 30px;
 }

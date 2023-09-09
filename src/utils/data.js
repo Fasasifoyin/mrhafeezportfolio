@@ -1,4 +1,6 @@
 const data = {
+  profileImage:
+    "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694008794/Metaversus/photo-1557862921-37829c790f19_z8qhnd.jpg",
   links: [
     {
       id: 1,
@@ -159,6 +161,29 @@ const data = {
       title: "Aisha Accessories n more",
       about:
         "Lorem ipsum dolor sit amet consectetur. Egestas interdum id sagittis sed cursus ullamcorper consequat. Posuere eget pellentesque morbi augue amet sapien. Sollicitudin turpis pellentesque ac neque neque orci dolor mi odio. Proin velit cum fringilla duis ultrices phasellus. Sed a quis volutpat scelerisque odio.",
+    },
+  ],
+  contact: [
+    {
+      id: 1,
+      icon: "",
+      head: "Phone Number",
+      link: "09078975643",
+      to: "",
+    },
+    {
+      id: 2,
+      icon: "",
+      head: "Email Address",
+      link: "abdulhafeez@gmail.com",
+      to: "",
+    },
+    {
+      id: 3,
+      icon: "",
+      head: "LinkedIn",
+      link: "abdulhaffez.linkedIn",
+      to: "",
     },
   ],
 };

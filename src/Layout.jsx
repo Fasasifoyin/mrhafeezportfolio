@@ -4,6 +4,7 @@ import Navbar from "./sections/Navbar";
 import { motion } from "framer-motion";
 import { navVariants } from "./utils/FramerVariants";
 import useElementHeight from "./hooks/useElementHeight";
+import Footer from "./sections/Footer";
 
 const Layout = ({ children }) => {
   const { elementRef, elementHeight } = useElementHeight();
@@ -23,9 +24,14 @@ const Layout = ({ children }) => {
       >
         <Navbar />
       </Box>
-      <Box className="cc-container page-alignment" mt={`${elementHeight}px`}>
+      <Box
+        mb={{ base: "50px", lg: "70px" }}
+        className="cc-container page-alignment"
+        mt={`${elementHeight}px`}
+      >
         {children}
       </Box>
+      <Footer />
     </Box>
   );
 };
