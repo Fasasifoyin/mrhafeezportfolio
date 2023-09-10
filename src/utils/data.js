@@ -102,28 +102,63 @@ const data = {
       image:
         "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
       about:
-        "Lorem ipsum dolor sit amet consectetur. Consequat ultrices eget sed pulvinar vitae habitant dolor dictum. Nibh velit nu Aliquet sedii lectus vulputate rhoncus.",
+        "1Lorem ipsum dolor sit amet consectetur. Consequat ultrices eget sed pulvinar vitae habitant dolor dictum. Nibh velit nu Aliquet sedii lectus vulputate rhoncus.",
     },
     {
       id: 2,
       image:
         "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
       about:
-        "Lorem ipsum dolor sit amet consectetur. Consequat ultrices eget sed pulvinar vitae habitant dolor dictum. Nibh velit nu Aliquet sedii lectus vulputate rhoncus.",
+        "2Lorem ipsum dolor sit amet consectetur. Consequat ultrices eget sed pulvinar vitae habitant dolor dictum. Nibh velit nu Aliquet sedii lectus vulputate rhoncus.",
     },
     {
       id: 3,
       image:
         "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
       about:
-        "Lorem ipsum dolor sit amet consectetur. Consequat ultrices eget sed pulvinar vitae habitant dolor dictum. Nibh velit nu Aliquet sedii lectus vulputate rhoncus.",
+        "3Lorem ipsum dolor sit amet consectetur. Consequat ultrices eget sed pulvinar vitae habitant dolor dictum. Nibh velit nu Aliquet sedii lectus vulputate rhoncus.",
     },
     {
       id: 4,
       image:
         "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
       about:
-        "Lorem ipsum dolor sit amet consectetur. Consequat ultrices eget sed pulvinar vitae habitant dolor dictum. Nibh velit nu Aliquet sedii lectus vulputate rhoncus. cccccccccccccc ccffcc cvcutctyc c cyfctyctyc cvfhctuctuc bcgfc8tctuc cgutcfcx cxguchvc c",
+        "4Lorem ipsum dolor sit amet consectetur. Consequat ultrices eget sed pulvinar vitae habitant dolor dictum. Nibh velit nu Aliquet sedii lectus vulputate rhoncus. cccccccccccccc ccffcc cvcutctyc c cyfctyctyc cvfhctuctuc bcgfc8tctuc cgutcfcx cxguchvc c",
+    },
+    {
+      id: 5,
+      image:
+        "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
+      about:
+        "5Lorem ipsum dolor sit amet consectetur. Consequat ultrices eget sed pulvinar vitae habitant dolor dictum. Nibh velit nu Aliquet sedii lectus vulputate rhoncus. cccccccccccccc ccffcc cvcutctyc c cyfctyctyc cvfhctuctuc bcgfc8tctuc cgutcfcx cxguchvc c",
+    },
+    {
+      id: 6,
+      image:
+        "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
+      about:
+        "6Lorem ipsum dolor sit amet consectetur. Consequat ultrices eget sed pulvinar vitae habitant dolor dictum. Nibh velit nu Aliquet sedii lectus vulputate rhoncus. cccccccccccccc ccffcc cvcutctyc c cyfctyctyc cvfhctuctuc bcgfc8tctuc cgutcfcx cxguchvc c",
+    },
+    {
+      id: 7,
+      image:
+        "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
+      about:
+        "7Lorem ipsum dolor sit amet consectetur. Consequat ultrices eget sed pulvinar vitae habitant dolor dictum. Nibh velit nu Aliquet sedii lectus vulputate rhoncus. cccccccccccccc ccffcc cvcutctyc c cyfctyctyc cvfhctuctuc bcgfc8tctuc cgutcfcx cxguchvc c",
+    },
+    {
+      id: 8,
+      image:
+        "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
+      about:
+        "8Lorem ipsum dolor sit amet consectetur. Consequat ultrices eget sed pulvinar vitae habitant dolor dictum. Nibh velit nu Aliquet sedii lectus vulputate rhoncus. cccccccccccccc ccffcc cvcutctyc c cyfctyctyc cvfhctuctuc bcgfc8tctuc cgutcfcx cxguchvc c",
+    },
+    {
+      id: 9,
+      image:
+        "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
+      about:
+        "9Lorem ipsum dolor sit amet consectetur. Consequat ultrices eget sed pulvinar vitae habitant dolor dictum. Nibh velit nu Aliquet sedii lectus vulputate rhoncus. cccccccccccccc ccffcc cvcutctyc c cyfctyctyc cvfhctuctuc bcgfc8tctuc cgutcfcx cxguchvc c",
     },
   ],
   resumes: [

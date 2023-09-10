@@ -64,7 +64,7 @@ const Portfolio = () => {
               <Flex justify={{ base: "end", md: "start" }}>
                 <a href={each.to} target="_blank" rel="noopener noreferrer">
                   {" "}
-                  <Icon as={AiOutlineLink} boxSize={7} />
+                  <Icon as={AiOutlineLink} boxSize={7} className="bg-hover-purple" />
                 </a>
               </Flex>
             </Box>
