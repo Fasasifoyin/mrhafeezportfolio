@@ -1,17 +1,18 @@
 import { Box, Image, Flex } from "@chakra-ui/react";
-import data from "../../utils/data"
+import data from "../../utils/data";
 import { motion } from "framer-motion";
-import { skillsVariant } from "../../utils/FramerVariants";
+import { slideBottomVariant } from "../../utils/FramerVariants";
+import TypingText from "../TypingText";
 
 const Skills = () => {
   return (
     <Box mb={{ base: "50px", lg: "70px" }}>
-      <h2>MY SKILLS</h2>
+      <TypingText title={"MY SKILLS"} />
       <Flex mt={"10px"} flexWrap={"wrap"} gap={10} justifyContent={"center"}>
         {data.skills.map((each, index) => (
           <Box
             as={motion.div}
-            variants={skillsVariant(index)}
+            variants={slideBottomVariant(index / 2, 100, 0.5, "spring")}
             initial="initial"
             whileInView="animate"
             viewport={{ once: true, amount: 0.25 }}

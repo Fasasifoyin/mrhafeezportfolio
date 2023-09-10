@@ -2,11 +2,12 @@ import { Box, Flex, Image, SimpleGrid } from "@chakra-ui/react";
 import data from "../../utils/data";
 import { motion } from "framer-motion";
 import { slideSides } from "../../utils/FramerVariants";
+import TypingText from "../TypingText";
 
 const Certications = () => {
   return (
     <Box>
-      <h2>MY CERTIFICATIONS</h2>
+      <TypingText title={"MY CERTIFICATIONS"} />
       <SimpleGrid columns={{ sm: 2, lg: 4 }} gap={5} mt={"10px"}>
         {data.certifications.map((each, index) => (
           <Flex

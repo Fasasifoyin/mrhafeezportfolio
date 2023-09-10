@@ -17,10 +17,11 @@ const Footer = () => {
         overflow={"hidden"}
       >
         <Flex
-            as={motion.div}
-            variants={slideSides(10, "-100%", 0.5)}
-            initial="initial"
-            whileInView="animate"
+          as={motion.div}
+          variants={slideSides(10, "-100%", 0.5)}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
           display={{ base: "none", lg: "flex" }}
           width={{ md: "43%", base: "100%" }}
           justify={"center"}
@@ -36,18 +37,17 @@ const Footer = () => {
               w={"100%"}
               h={"100%"}
               objectFit={"cover"}
-              src={data.profileImage}
+              src={data.hero.profileImage}
               borderRadius={"50%"}
             />
           </Box>
         </Flex>
-
         <Flex
           as={motion.div}
           variants={slideBottomVariant(5, 100, 0.5)}
           initial="initial"
           whileInView="animate"
-          viewport={{ amount: 0.25 }}
+          viewport={{ amount: 0.25, once: true }}
           width={{ base: "100%", lg: "53%" }}
           maxW={{ base: "520px", lg: "53%" }}
         >

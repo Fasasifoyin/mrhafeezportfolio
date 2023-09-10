@@ -19,8 +19,8 @@ const Layout = ({ children }) => {
         w={"100%"}
         zIndex={10}
         py={{ base: "20px", md: "27px", lg: "39px" }}
-        // as={motion.div}
-        // {...navVariants}
+        as={motion.div}
+        {...navVariants}
       >
         <Navbar />
       </Box>

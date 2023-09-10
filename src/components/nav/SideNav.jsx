@@ -8,6 +8,7 @@ import {
 import { motion } from "framer-motion";
 import Links from "./Links";
 import useWindowSize from "../../hooks/useWindowSize";
+import data from "../../utils/data";
 
 const SideNav = ({ setOpen }) => {
   const { width } = useWindowSize();
@@ -21,8 +22,9 @@ const SideNav = ({ setOpen }) => {
       display={{ lg: "none" }}
     >
       <Flex
-        h={{ base: "100%", md: "auto" }}
         direction={"column"}
+        h={{ base: "calc(100vh - 140px)", md: "auto" }}
+        maxH={{ md: "calc(100vh - 140px)" }}
         overflowY={"scroll"}
         className="scrollbody"
         gap={{ base: "60px", md: "35px" }}
@@ -44,8 +46,11 @@ const SideNav = ({ setOpen }) => {
           animate="animate"
         >
           <p className="text-purple-light-5 fw-600">SAY HELLO</p>
-          <h4 className="small-text">08024567899</h4>
-          <h4 className="small-text">abiolahafeez@gmail.com</h4>
+          {data.sayHello.map((each) => (
+            <a key={each.id} href={each.to} className="small-text">
+              {each.link}
+            </a>
+          ))}
         </Flex>
         <Box
           as={motion.div}

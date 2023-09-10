@@ -1,16 +1,14 @@
 import { Box, Flex, Icon, Image } from "@chakra-ui/react";
 import data from "../utils/data";
-import {
-  slideBottomVariant,
-  slideSides,
-} from "../utils/FramerVariants";
+import { slideBottomVariant, slideSides } from "../utils/FramerVariants";
 import { motion } from "framer-motion";
 import { AiOutlineLink } from "react-icons/ai";
+import TypingText from "../components/TypingText";
 
 const Portfolio = () => {
   return (
     <Box id="portfolio" mb={{ base: "70px", lg: "100px" }}>
-      <h2>PORTFOLIO</h2>
+      <TypingText title={"PORTFOLIO"} />
       <Flex
         mt={{ base: "50px", lg: "70px" }}
         gap={{ base: "50px", lg: "70px" }}
@@ -64,7 +62,10 @@ const Portfolio = () => {
                 <h4 className="small-text">{each.about}</h4>
               </Box>
               <Flex justify={{ base: "end", md: "start" }}>
-                <Icon as={AiOutlineLink} boxSize={7} />
+                <a href={each.to} target="_blank" rel="noopener noreferrer">
+                  {" "}
+                  <Icon as={AiOutlineLink} boxSize={7} />
+                </a>
               </Flex>
             </Box>
           </Flex>

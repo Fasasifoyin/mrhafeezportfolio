@@ -1,3 +1,20 @@
+export const navVariants = {
+  initial: {
+    opacity: 0,
+    y: "-100vh",
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      stiffness: 50,
+      damping: 12,
+      duration: 0.5,
+    },
+  },
+};
+
 export const sideNavSmVariants = {
   key: "sideNavSm",
   initial: { opacity: 0 },
@@ -30,7 +47,7 @@ export const sideNavVariants = {
   },
 };
 
-export const slideBottomVariant = (delay, start, duration) => ({
+export const slideBottomVariant = (delay, start, duration, type) => ({
   initial: {
     opacity: 0,
     y: start,
@@ -41,7 +58,7 @@ export const slideBottomVariant = (delay, start, duration) => ({
     transition: {
       delay: 0.1 * delay,
       duration: duration,
-      type: "tween",
+      type: type ? type : "tween",
     },
   },
 });
@@ -61,38 +78,26 @@ export const slideSides = (delay, start, duration) => ({
   },
 });
 
-export const skillsVariant = (index) => ({
+export const textContainer = {
   initial: {
     opacity: 0,
-    y: 100,
+  },
+  animate: (i = 1) => ({
+    opacity: 1,
+    transition: { staggerChildren: 0.1, delayChildren: i * 0.1 },
+  }),
+};
+
+export const textVariant = (index) => ({
+  initial: {
+    opacity: 0,
   },
   animate: {
     opacity: 1,
-    y: 0,
     transition: {
-      delay: 0.05 * index,
+      type: "tween",
+      ease: "easeIn",
+      delay: 0.1 * index,
     },
   },
 });
-
-export const navVariants = {
-  initial: {
-    opacity: 0,
-    y: "-100vh",
-    transition: {
-      type: "spring",
-      stiffness: 300,
-      damping: 140,
-    },
-  },
-  animate: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      type: "spring",
-      stiffness: 50,
-      damping: 12,
-      delay: 0.5,
-    },
-  },
-};

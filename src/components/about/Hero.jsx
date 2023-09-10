@@ -3,9 +3,12 @@ import useElementHeight from "../../hooks/useElementHeight";
 import { motion } from "framer-motion";
 import { slideSides } from "../../utils/FramerVariants";
 import data from "../../utils/data";
+import { Link } from "react-scroll";
+import useWindowSize from "../../hooks/useWindowSize";
 
 const Hero = () => {
   const { elementRef, elementWidth } = useElementHeight();
+  const { width } = useWindowSize();
 
   return (
     <Flex
@@ -17,7 +20,7 @@ const Hero = () => {
     >
       <Flex
         as={motion.div}
-        variants={slideSides(10, "-100%", 1)}
+        variants={slideSides(20, "-100%", 1)}
         initial="initial"
         animate="animate"
         direction={"column"}
@@ -26,22 +29,16 @@ const Hero = () => {
         textAlign={{ base: "center", lg: "start" }}
       >
         <Box>
-          <h2>ABDULHAFEEZ KEKERE-EKUN</h2>
-          <h3 className="text-purple fw-500">PROJECT MANAGER</h3>
+          <h2 style={{ textTransform: "uppercase" }}>{data.hero.name}</h2>
+          <h3
+            className="text-purple fw-500"
+            style={{ textTransform: "uppercase" }}
+          >
+            {data.hero.title}
+          </h3>
         </Box>
         <Box width={{ lg: "83%" }}>
-          <h4 className="small-text fw-500">
-            Lorem ipsum dolor sit amet consectetur. Scelerisque diam purus sed
-            ut dictum posuere. Semper pretium ultrices nisi velit mollis. Ut
-            risus ullamcorper sagittis facilisis nibh. Velit urna dui vel vitae.
-            Cras consectetur ut sem condimentum. Ornare aliquam enim sed sit
-            facilisis massa elementum elementum varius. Malesuada lectus in arcu
-            in enim convallis amet. Vel vestibulum in arcu at. Nulla tristique
-            et varius et. Tellus velit eget lectus suspendisse proin lectus.
-            Interdum turpis elementum neque eu et tellus diam. Morbi purus
-            fringilla faucibus lorem tellus velit tincidunt enim dictum. Massa
-            id ridiculus enim elementum in.
-          </h4>
+          <h4 className="small-text fw-500">{data.hero.about}</h4>
         </Box>
         <Box>
           <Button
@@ -49,13 +46,21 @@ const Hero = () => {
             rounded={0}
             className="border-purple text-purple bg-purple-light-9-hover"
           >
-            <h4 className="small-text fw-600">View Portfolio</h4>
+            <Link
+              to={"portfolio"}
+              spy={true}
+              smooth={true}
+              offset={width < 768 ? -60 : -100}
+              duration={500}
+            >
+              <h4 className="small-text cursor fw-600">View Portfolio</h4>
+            </Link>
           </Button>
         </Box>
       </Flex>
       <Flex
         as={motion.div}
-        variants={slideSides(10, "100%", 1)}
+        variants={slideSides(20, "100%", 1)}
         initial="initial"
         animate="animate"
         width={{ lg: "47%", base: "100%" }}
@@ -72,7 +77,7 @@ const Hero = () => {
             w={"100%"}
             h={"100%"}
             objectFit={"cover"}
-            src={data.profileImage}
+            src={data.hero.profileImage}
             borderRadius={"50%"}
           />
         </Box>

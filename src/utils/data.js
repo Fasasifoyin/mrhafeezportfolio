@@ -1,6 +1,7 @@
+import { BsTelephone } from "react-icons/bs";
+import { BiLogoLinkedin, BiLogoGmail } from "react-icons/bi";
+
 const data = {
-  profileImage:
-    "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694008794/Metaversus/photo-1557862921-37829c790f19_z8qhnd.jpg",
   links: [
     {
       id: 1,
@@ -27,6 +28,32 @@ const data = {
       offSet: 0,
     },
   ],
+  sayHello: [
+    {
+      id: 1,
+      link: "09078975643",
+      to: "https://www.google.com",
+    },
+    {
+      id: 2,
+      link: "abdulhafeez@gmail.com",
+      to: "https://www.google.com",
+    },
+    {
+      id: 3,
+      link: "abdulhaffez.linkedIn",
+      to: "https://www.google.com",
+    },
+  ],
+  hero: {
+    profileImage:
+      "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694008794/Metaversus/photo-1557862921-37829c790f19_z8qhnd.jpg",
+    name: "Abdulhafeez Kekere-Ekun",
+    title: "Project Manager",
+    about:
+      "Lorem ipsum dolor sit amet consectetur. Scelerisque diam purus sedut dictum posuere. Semper pretium ultrices nisi velit mollis. Utrisus ullamcorper sagittis facilisis nibh. Velit urna dui vel vitae.Cras consectetur ut sem condimentum. Ornare aliquam enim sed sit facilisis massa elementum elementum varius. Malesuada lectus in arcuin enim convallis amet. Vel vestibulum in arcu at. Nulla tristique et varius et. Tellus velit eget lectus suspendisse proin lectus. Interdum turpis elementum neque eu et tellus diam. Morbi purus fringilla faucibus lorem tellus velit tincidunt enim dictum. Massaid ridiculus enim elementum in.",
+  },
+
   skills: [
     {
       id: 1,
@@ -145,6 +172,7 @@ const data = {
       title: "Aisha Accessories n more",
       about:
         "Lorem ipsum dolor sit amet consectetur. Egestas interdum id sagittis sed cursus ullamcorper consequat. Posuere eget pellentesque morbi augue amet sapien. Sollicitudin turpis pellentesque ac neque neque orci dolor mi odio. Proin velit cum fringilla duis ultrices phasellus. Sed a quis volutpat scelerisque odio.",
+      to: "https://www.facebook.com",
     },
     {
       id: 2,
@@ -153,6 +181,7 @@ const data = {
       title: "Aisha Accessories n more",
       about:
         "Lorem ipsum dolor sit amet consectetur. Egestas interdum id sagittis sed cursus ullamcorper consequat. Posuere eget pellentesque morbi augue amet sapien. Sollicitudin turpis pellentesque ac neque neque orci dolor mi odio. Proin velit cum fringilla duis ultrices phasellus. Sed a quis volutpat scelerisque odio.",
+      to: "https://www.facebook.com",
     },
     {
       id: 3,
@@ -161,29 +190,30 @@ const data = {
       title: "Aisha Accessories n more",
       about:
         "Lorem ipsum dolor sit amet consectetur. Egestas interdum id sagittis sed cursus ullamcorper consequat. Posuere eget pellentesque morbi augue amet sapien. Sollicitudin turpis pellentesque ac neque neque orci dolor mi odio. Proin velit cum fringilla duis ultrices phasellus. Sed a quis volutpat scelerisque odio.",
+      to: "https://www.google.com",
     },
   ],
   contact: [
     {
       id: 1,
-      icon: "",
+      icon: BsTelephone,
       head: "Phone Number",
       link: "09078975643",
-      to: "",
+      to: "https://www.google.com",
     },
     {
       id: 2,
-      icon: "",
+      icon: BiLogoGmail,
       head: "Email Address",
       link: "abdulhafeez@gmail.com",
-      to: "",
+      to: "https://www.google.com",
     },
     {
       id: 3,
-      icon: "",
+      icon: BiLogoLinkedin,
       head: "LinkedIn",
       link: "abdulhaffez.linkedIn",
-      to: "",
+      to: "https://www.google.com",
     },
   ],
 };

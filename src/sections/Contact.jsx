@@ -1,13 +1,13 @@
 import { Box, Flex, Icon, SimpleGrid } from "@chakra-ui/react";
 import data from "../utils/data";
-import { BsTelephone } from "react-icons/bs";
-import {  slideSides } from "../utils/FramerVariants";
+import { slideSides } from "../utils/FramerVariants";
 import { motion } from "framer-motion";
+import TypingText from "../components/TypingText";
 
 const Contact = () => {
   return (
     <Box id="contact">
-      <h2>Contact</h2>
+      <TypingText title={"CONTACT"} />
       <Box mt={{ base: "50px", lg: "70px" }}>
         <SimpleGrid gap={50} columns={{ base: 1, md: 3 }}>
           {data.contact.map((each, index) => (
@@ -27,14 +27,29 @@ const Contact = () => {
               align={"center"}
               p={"20px"}
             >
-              <Flex direction={"column"} align={"center"} gap={"10px"}>
+              <Flex
+                width={"100%"}
+                direction={"column"}
+                align={"center"}
+                gap={"10px"}
+              >
+                <Flex
+                  w={{ base: "70px", sm: "80px", md: "90px", lg: "100px" }}
+                  h={{ base: "70px", sm: "80px", md: "90px", lg: "100px" }}
+                  borderRadius={"50%"}
+                  className="bg-purple"
+                  justify={"center"}
+                  align={"center"}
+                >
+                  <Icon as={each.icon} color={"white"} boxSize={10} />
+                </Flex>
                 <p
                   className="fw-600"
                   style={{ wordBreak: "break-all", textAlign: "center" }}
                 >
                   {each.head}
                 </p>
-                <a target="_blank" rel="noopener noreferrer">
+                <a href={each.to} target="_blank" rel="noopener noreferrer">
                   <p
                     className="fw-600 text-purple"
                     style={{ wordBreak: "break-all", textAlign: "center" }}

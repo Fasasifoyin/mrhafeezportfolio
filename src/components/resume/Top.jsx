@@ -1,4 +1,7 @@
 import { Box, Button, Flex } from "@chakra-ui/react";
+import TypingText from "../TypingText";
+import { motion } from "framer-motion";
+import { slideBottomVariant } from "../../utils/FramerVariants";
 
 const Top = () => {
   return (
@@ -7,8 +10,13 @@ const Top = () => {
       align={{ base: "center", md: "start" }}
       mb={{ base: "20px", md: "50px", lg: "70px" }}
     >
-      <h2>RESUME</h2>
+      <TypingText title={"RESUME"} />
       <Flex
+        as={motion.div}
+        variants={slideBottomVariant(0, 50, 0.5)}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
         direction={{ base: "column-reverse", md: "row" }}
         justify={"space-between"}
         align={{ base: "", md: "end" }}
