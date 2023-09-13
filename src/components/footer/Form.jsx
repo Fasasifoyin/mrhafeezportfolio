@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Box, Button, Flex } from "@chakra-ui/react";
 import Input from "./Input";
+import emailjs from "@emailjs/browser";
+// service_07w58zn
 
 const Form = () => {
   const [name, setName] = useState("");
@@ -8,27 +10,51 @@ const Form = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
-  const onSubmit = (e) => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
     e.preventDefault();
-    console.log(name, email, subject, message);
+    emailjs
+      .sendForm(
+        "service_mas9xci",
+        "template_e9gz3h6",
+        form.current,
+        "bA4fqTqAOjhRjZhGh"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
-    <form style={{ width: "100%" }} onSubmit={onSubmit}>
+    <form ref={form} style={{ width: "100%" }} onSubmit={sendEmail}>
       <Flex direction={"column"} gap={"30px"}>
-        <Input intial={name} setInitial={setName} placeholder={"Your Name"} />
         <Input
+          name="name"
+          intial={name}
+          setInitial={setName}
+          placeholder={"Your Name"}
+        />
+        <Input
+          name="email"
           intial={email}
           setInitial={setEmail}
           placeholder={"Your Email"}
+          type={"email"}
         />
         <Input
+          name="subject"
           intial={subject}
           setInitial={setSubject}
           placeholder={"Subject"}
-          type={"email"}
         />
         <textarea
+          name="message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           className="bg-white fw-500"

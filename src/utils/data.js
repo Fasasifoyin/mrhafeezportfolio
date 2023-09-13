@@ -36,8 +36,8 @@ const data = {
     },
     {
       id: 2,
-      link: "abdulhafeez@gmail.com",
-      to: "https://www.google.com",
+      link: "abiolahafeez@gmail.com",
+      to: "mailto:abiolahafeez@gmail.com",
     },
     {
       id: 3,
@@ -241,7 +241,7 @@ const data = {
       icon: BiLogoGmail,
       head: "Email Address",
       link: "abdulhafeez@gmail.com",
-      to: "https://www.google.com",
+      to: "mailto:abiolahafeez@gmail.com",
     },
     {
       id: 3,

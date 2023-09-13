@@ -47,7 +47,7 @@ const SideNav = ({ setOpen }) => {
         >
           <p className="text-purple-light-5 fw-600">SAY HELLO</p>
           {data.sayHello.map((each) => (
-            <a key={each.id} href={each.to} className="small-text">
+            <a style={{width: "max-content"}} key={each.id} href={each.to} className="small-text">
               {each.link}
             </a>
           ))}
@@ -58,14 +58,16 @@ const SideNav = ({ setOpen }) => {
           initial="initial"
           animate="animate"
         >
-          <Button
-            size={"sm"}
-            variant={"outline"}
-            className="border-purple text-purple bg-purple-light-9-hover"
-            rounded={0}
-          >
-            <h4 className="small-text fw-600">Download Full Resume</h4>
-          </Button>
+          <a href="" download="">
+            <Button
+              size={"sm"}
+              variant={"outline"}
+              className="border-purple text-purple bg-purple-light-9-hover"
+              rounded={0}
+            >
+              <h4 className="small-text fw-600">Download Full Resume</h4>
+            </Button>
+          </a>
         </Box>
       </Flex>
     </Box>
