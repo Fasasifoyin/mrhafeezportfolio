@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { Box, Button, Flex } from "@chakra-ui/react";
 import Input from "./Input";
 import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 // service_07w58zn
 
 const Form = () => {
@@ -9,11 +10,13 @@ const Form = () => {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoading(true);
     emailjs
       .sendForm(
         "service_mas9xci",
@@ -22,11 +25,17 @@ const Form = () => {
         "bA4fqTqAOjhRjZhGh"
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
+          toast.success("Message sent successfully");
+          setName("");
+          setEmail("");
+          setSubject("");
+          setMessage("");
+          setLoading(false);
         },
-        (error) => {
-          console.log(error.text);
+        () => {
+          toast.error("An error occured while sending message");
+          setLoading(false);
         }
       );
   };
@@ -68,7 +77,9 @@ const Form = () => {
             rounded={0}
             className="border-purple text-purple bg-purple-light-9-hover"
           >
-            <h4 className="small-text fw-600">Send Message</h4>
+            <h4 className="small-text fw-600">
+              {loading ? "Sending..." : "Send Message"}
+            </h4>
           </Button>
         </Box>
       </Flex>
