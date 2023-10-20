@@ -1,5 +1,16 @@
 import { BsTelephone } from "react-icons/bs";
 import { BiLogoLinkedin, BiLogoGmail } from "react-icons/bi";
+import profile from "../../public/images/profile.png"
+import techstudio from "../../public/images/techstudio.png";
+import rataz from "../../public/images/rataz.png";
+import yemsay from "../../public/images/yemsay.png";
+import foundation from "../../public/images/Foundation of PM.jpg"
+import project_initiation from "../../public/images/Project_Initiation.jpg"
+import project_planning from "../../public/images/Project_Planning.jpg"
+import project_execution from "../../public/images/Project_Execution.jpg"
+import capstone_project from "../../public/images/Capstone_Project.jpg"
+import agile_pm from "../../public/images/Agile_PM.jpg"
+import ASK from "../../public/images/ASK_Foundation_page.jpg"
 
 const data = {
   links: [
@@ -31,27 +42,31 @@ const data = {
   sayHello: [
     {
       id: 1,
-      link: "09078975643",
-      to: "https://www.google.com",
+      link: "08086883005",
+      // "09078975643",
+      to: "https://api.whatsapp.com/send/?phone=2348086883005",
     },
     {
       id: 2,
-      link: "abiolahafeez@gmail.com",
-      to: "mailto:abiolahafeez@gmail.com",
+      link: "abiolahafeez@yahoo.com",
+      // "abiolahafeez@gmail.com",
+      to: "mailto:abiolahafeez@yahoo.com",
+      // "mailto:abiolahafeez@gmail.com",
     },
     {
       id: 3,
-      link: "abdulhaffez.linkedIn",
-      to: "https://www.google.com",
+      link: "Abdulhafeez Kekere-Ekun",
+      // "abdulhaffez.linkedIn",
+      to: "http://www.linkedin.com/in/hafeez-kekere-ekun",
+      // "https://www.google.com",
     },
   ],
   hero: {
-    profileImage:
-      "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694008794/Metaversus/photo-1557862921-37829c790f19_z8qhnd.jpg",
+    profileImage: profile ,
     name: "Abdulhafeez Kekere-Ekun",
     title: "Project Manager",
     about:
-      "Lorem ipsum dolor sit amet consectetur. Scelerisque diam purus sedut dictum posuere. Semper pretium ultrices nisi velit mollis. Utrisus ullamcorper sagittis facilisis nibh. Velit urna dui vel vitae.Cras consectetur ut sem condimentum. Ornare aliquam enim sed sit facilisis massa elementum elementum varius. Malesuada lectus in arcuin enim convallis amet. Vel vestibulum in arcu at. Nulla tristique et varius et. Tellus velit eget lectus suspendisse proin lectus. Interdum turpis elementum neque eu et tellus diam. Morbi purus fringilla faucibus lorem tellus velit tincidunt enim dictum. Massaid ridiculus enim elementum in.",
+      "A versatile and results-oriented product and project manager with over 4 years of experience in the tech industry. Skilled in leading cross-functional teams, managing project development cycles, and delivering user-centric solutions. Certified by Google in project management and proficient in web development technologies. A former research scientist with a Master of Science in Medical Microbiology (Virology) and a passion for innovation..",
   },
 
   skills: [
@@ -99,133 +114,128 @@ const data = {
   certifications: [
     {
       id: 1,
-      image:
-        "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
+      image: foundation,
+        // "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
       about:
-        "1Lorem ipsum dolor sit amet consectetur. Consequat ultrices eget sed pulvinar vitae habitant dolor dictum. Nibh velit nu Aliquet sedii lectus vulputate rhoncus.",
+        "Foundations of Project Management",
     },
     {
       id: 2,
-      image:
-        "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
+      image:project_initiation,
+        // "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
       about:
-        "2Lorem ipsum dolor sit amet consectetur. Consequat ultrices eget sed pulvinar vitae habitant dolor dictum. Nibh velit nu Aliquet sedii lectus vulputate rhoncus.",
+        "Project Initiation: Starting a Successful Project",
     },
     {
       id: 3,
-      image:
-        "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
-      about:
-        "3Lorem ipsum dolor sit amet consectetur. Consequat ultrices eget sed pulvinar vitae habitant dolor dictum. Nibh velit nu Aliquet sedii lectus vulputate rhoncus.",
+      image: project_planning,
+        // "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
+      about: "Project Planning: Putting It All Together",
     },
     {
       id: 4,
-      image:
-        "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
-      about:
-        "4Lorem ipsum dolor sit amet consectetur. Consequat ultrices eget sed pulvinar vitae habitant dolor dictum. Nibh velit nu Aliquet sedii lectus vulputate rhoncus. cccccccccccccc ccffcc cvcutctyc c cyfctyctyc cvfhctuctuc bcgfc8tctuc cgutcfcx cxguchvc c",
+      image: project_execution,
+        // "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
+      about: "Project Execution: Running the Project",
     },
     {
       id: 5,
-      image:
-        "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
+      image:capstone_project,
+        // "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
       about:
-        "5Lorem ipsum dolor sit amet consectetur. Consequat ultrices eget sed pulvinar vitae habitant dolor dictum. Nibh velit nu Aliquet sedii lectus vulputate rhoncus. cccccccccccccc ccffcc cvcutctyc c cyfctyctyc cvfhctuctuc bcgfc8tctuc cgutcfcx cxguchvc c",
+        "Capstone: Applying Project Management in the Real World",
     },
     {
       id: 6,
-      image:
-        "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
+      image:agile_pm,
+        // "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
       about:
-        "6Lorem ipsum dolor sit amet consectetur. Consequat ultrices eget sed pulvinar vitae habitant dolor dictum. Nibh velit nu Aliquet sedii lectus vulputate rhoncus. cccccccccccccc ccffcc cvcutctyc c cyfctyctyc cvfhctuctuc bcgfc8tctuc cgutcfcx cxguchvc c",
+        "Agile Project Management",
     },
     {
       id: 7,
-      image:
-        "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
+      image: ASK,
+        // "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
       about:
-        "7Lorem ipsum dolor sit amet consectetur. Consequat ultrices eget sed pulvinar vitae habitant dolor dictum. Nibh velit nu Aliquet sedii lectus vulputate rhoncus. cccccccccccccc ccffcc cvcutctyc c cyfctyctyc cvfhctuctuc bcgfc8tctuc cgutcfcx cxguchvc c",
+        "Agile, SCRUM, and Kanban Foundations",
     },
-    {
-      id: 8,
-      image:
-        "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
-      about:
-        "8Lorem ipsum dolor sit amet consectetur. Consequat ultrices eget sed pulvinar vitae habitant dolor dictum. Nibh velit nu Aliquet sedii lectus vulputate rhoncus. cccccccccccccc ccffcc cvcutctyc c cyfctyctyc cvfhctuctuc bcgfc8tctuc cgutcfcx cxguchvc c",
-    },
-    {
-      id: 9,
-      image:
-        "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
-      about:
-        "9Lorem ipsum dolor sit amet consectetur. Consequat ultrices eget sed pulvinar vitae habitant dolor dictum. Nibh velit nu Aliquet sedii lectus vulputate rhoncus. cccccccccccccc ccffcc cvcutctyc c cyfctyctyc cvfhctuctuc bcgfc8tctuc cgutcfcx cxguchvc c",
-    },
+    // {
+    //   id: 8,
+    //   image:
+    //     "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
+    //   about:
+    //     "8Lorem ipsum dolor sit amet consectetur. Consequat ultrices eget sed pulvinar vitae habitant dolor dictum. Nibh velit nu Aliquet sedii lectus vulputate rhoncus. cccccccccccccc ccffcc cvcutctyc c cyfctyctyc cvfhctuctuc bcgfc8tctuc cgutcfcx cxguchvc c",
+    // },
+    // {
+    //   id: 9,
+    //   image:
+    //     "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
+    //   about:
+    //     "9Lorem ipsum dolor sit amet consectetur. Consequat ultrices eget sed pulvinar vitae habitant dolor dictum. Nibh velit nu Aliquet sedii lectus vulputate rhoncus. cccccccccccccc ccffcc cvcutctyc c cyfctyctyc cvfhctuctuc bcgfc8tctuc cgutcfcx cxguchvc c",
+    // },
   ],
   resumes: [
     {
       id: 1,
-      position: "Project Manager1",
+      position: "Product Manager",
       type: "Fulltime",
-      company: "Facebook, Inc.",
-      location: "Nigeria",
-      start: "January 2019",
+      company: "Techstudio Consult",
+      location: "Lagos, Nigeria",
+      start: "November 2022",
       end: "Present",
     },
     {
       id: 2,
-      position: "Project Manager2",
+      position: "Production Manager",
       type: "Fulltime",
-      company: "Facebook, Inc.",
-      location: "Nigeria",
-      start: "January 2019",
-      end: "Present",
+      company: "Sari Premium Wellness LTD",
+      location: "Lagos, Nigeria",
+      start: "July 2021",
+      end: "November 2022",
     },
     {
       id: 3,
-      position: "Project Manager3",
+      position: "Web Developer",
       type: "Fulltime",
-      company: "Facebook, Inc.",
-      location: "Nigeria",
-      start: "January 2019",
-      end: "Present",
+      company: "Strategic Dots Ltd",
+      location: "Lagos, Nigeria",
+      start: "September 2019",
+      end: "July 2021",
     },
-    {
-      id: 4,
-      position: "Project Manager4",
-      type: "Fulltime",
-      company: "Facebook, Inc.",
-      location: "Nigeria",
-      start: "January 2019",
-      end: "Present",
-    },
+    // {
+    //   id: 4,
+    //   position: "Project Manager4",
+    //   type: "Fulltime",
+    //   company: "Facebook, Inc.",
+    //   location: "Nigeria",
+    //   start: "January 2019",
+    //   end: "Present",
+    // },
   ],
   projects: [
     {
       id: 1,
-      image:
-        "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694094279/Metaversus/Frame_39_shqezo.webp",
-      title: "Aisha Accessories n more",
+      image: techstudio,
+      title: "Tech Studio Academy",
       about:
         "Lorem ipsum dolor sit amet consectetur. Egestas interdum id sagittis sed cursus ullamcorper consequat. Posuere eget pellentesque morbi augue amet sapien. Sollicitudin turpis pellentesque ac neque neque orci dolor mi odio. Proin velit cum fringilla duis ultrices phasellus. Sed a quis volutpat scelerisque odio.",
-      to: "https://www.facebook.com",
+      to: "https://techstudio.academy",
     },
     {
       id: 2,
-      image:
-        "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694094279/Metaversus/Frame_39_shqezo.webp",
-      title: "Aisha Accessories n more",
+      image: rataz,
+      title: "Razat Publishers",
       about:
         "Lorem ipsum dolor sit amet consectetur. Egestas interdum id sagittis sed cursus ullamcorper consequat. Posuere eget pellentesque morbi augue amet sapien. Sollicitudin turpis pellentesque ac neque neque orci dolor mi odio. Proin velit cum fringilla duis ultrices phasellus. Sed a quis volutpat scelerisque odio.",
-      to: "https://www.facebook.com",
+      to: "https://www.razatpublishers.com/",
     },
     {
       id: 3,
-      image:
-        "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694094279/Metaversus/Frame_39_shqezo.webp",
-      title: "Aisha Accessories n more",
+      image: yemsay,
+      title: "Yemsays Properties and Investments",
       about:
         "Lorem ipsum dolor sit amet consectetur. Egestas interdum id sagittis sed cursus ullamcorper consequat. Posuere eget pellentesque morbi augue amet sapien. Sollicitudin turpis pellentesque ac neque neque orci dolor mi odio. Proin velit cum fringilla duis ultrices phasellus. Sed a quis volutpat scelerisque odio.",
-      to: "https://www.google.com",
+      to: "https://www.yemsaysproperties.com",
     },
   ],
   contact: [
@@ -233,22 +243,23 @@ const data = {
       id: 1,
       icon: BsTelephone,
       head: "Phone Number",
-      link: "09078975643",
-      to: "https://www.google.com",
+      link: "08128200056 | 08086883005 ",
+      to: "https://api.whatsapp.com/send/?phone=2348128200056",
     },
     {
       id: 2,
       icon: BiLogoGmail,
       head: "Email Address",
-      link: "abdulhafeez@gmail.com",
-      to: "mailto:abiolahafeez@gmail.com",
+      link: "abiolahafeez@yahoo.com",
+      to: "mailto:abiolahafeez@yahoo.com",
     },
     {
       id: 3,
       icon: BiLogoLinkedin,
       head: "LinkedIn",
-      link: "abdulhaffez.linkedIn",
-      to: "https://www.google.com",
+
+      link: "Abdulhafeez Kekere-Ekun",
+      to: "http://www.linkedin.com/in/hafeez-kekere-ekun",
     },
   ],
 };
