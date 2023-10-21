@@ -55,12 +55,16 @@ const Certications = () => {
                             h={{ base: "55px", md: "75px" }}
                             mb={"15px"}
                           >
+                            
+                            <a href={each.to} target="_blank">
                             <Image
                               w={"100%"}
                               h={"100%"}
                               objectFit={"cover"}
                               src={each.image}
                             />
+
+                            </a>
                           </Box>
                           <h6 className="tiny-text fw-600">{each.about}</h6>{" "}
                         </Flex>

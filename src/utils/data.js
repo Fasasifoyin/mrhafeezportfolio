@@ -118,6 +118,7 @@ const data = {
         // "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
       about:
         "Foundations of Project Management",
+        to: "../../public/images/Foundation of PM.jpg",
     },
     {
       id: 2,
@@ -125,18 +126,21 @@ const data = {
         // "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
       about:
         "Project Initiation: Starting a Successful Project",
+        to: "../../public/images/Project_Initiation.jpg",
     },
     {
       id: 3,
       image: project_planning,
         // "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
       about: "Project Planning: Putting It All Together",
+      to: "../../public/images/Project_Planning.jpg",
     },
     {
       id: 4,
       image: project_execution,
         // "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
       about: "Project Execution: Running the Project",
+      to: "../../public/images/Project_Execution.jpg",
     },
     {
       id: 5,
@@ -144,6 +148,7 @@ const data = {
         // "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
       about:
         "Capstone: Applying Project Management in the Real World",
+        about: "../../public/images/Capstone_Project.jpg",
     },
     {
       id: 6,
@@ -151,6 +156,7 @@ const data = {
         // "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
       about:
         "Agile Project Management",
+        to: "../../public/images/Agile_PM.jpg",
     },
     {
       id: 7,
@@ -158,6 +164,7 @@ const data = {
         // "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
       about:
         "Agile, SCRUM, and Kanban Foundations",
+        to: "../../public/images/ASK_Foundation_page.jpg",
     },
     // {
     //   id: 8,
@@ -218,15 +225,15 @@ const data = {
       image: techstudio,
       title: "Tech Studio Academy",
       about:
-        "Lorem ipsum dolor sit amet consectetur. Egestas interdum id sagittis sed cursus ullamcorper consequat. Posuere eget pellentesque morbi augue amet sapien. Sollicitudin turpis pellentesque ac neque neque orci dolor mi odio. Proin velit cum fringilla duis ultrices phasellus. Sed a quis volutpat scelerisque odio.",
-      to: "https://techstudio.academy",
+        "TechStudio Academy is a tech training company based in Lagos, Nigeria, founded in 2017 with the objective of providing cost-effective and high-quality tech education to aspiring young people in the country. Over the past four years, the academy has trained over 1000 students through both online and in-person classes, and has helped them achieve their career goals in the tech industry. Tech studio academy envisions to become a leading and preferred technology training provider in Nigeria, responding to the needs of the industry.",
+      to: "https://techstudioacademy.com",
     },
     {
       id: 2,
       image: rataz,
       title: "Razat Publishers",
       about:
-        "Lorem ipsum dolor sit amet consectetur. Egestas interdum id sagittis sed cursus ullamcorper consequat. Posuere eget pellentesque morbi augue amet sapien. Sollicitudin turpis pellentesque ac neque neque orci dolor mi odio. Proin velit cum fringilla duis ultrices phasellus. Sed a quis volutpat scelerisque odio.",
+        "Razart publishers values talent diversity and development by being market focused in all we do and encourage quality production. To publish quality and educative books that aid children's learning and increase their diffusion of knowledge. ",
       to: "https://www.razatpublishers.com/",
     },
     {
@@ -234,7 +241,7 @@ const data = {
       image: yemsay,
       title: "Yemsays Properties and Investments",
       about:
-        "Lorem ipsum dolor sit amet consectetur. Egestas interdum id sagittis sed cursus ullamcorper consequat. Posuere eget pellentesque morbi augue amet sapien. Sollicitudin turpis pellentesque ac neque neque orci dolor mi odio. Proin velit cum fringilla duis ultrices phasellus. Sed a quis volutpat scelerisque odio.",
+        "Yemsays Properties is a Lagos-based real estate company that specializes in the sale, rental, and management of all types of properties. They offer a wide range of services to  clients, including property search and acquisition, valuation, management, renovation and development, and financial and legal advice. They are committed to providing  clients with the highest level of service and support throughout the buying or selling process..",
       to: "https://www.yemsaysproperties.com",
     },
   ],

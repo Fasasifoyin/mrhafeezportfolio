@@ -39,12 +39,15 @@ const Portfolio = () => {
               width={{ base: "100%", sm: "85%", md: "48%" }}
               h={{ base: "auto", md: "420px" }}
             >
+              <a href={each.to} target="_blank" rel="noopener noreferrer">
               <Image
                 w={"100%"}
                 h={"100%"}
                 objectFit={"cover"}
                 src={each.image}
               />
+
+              </a>
             </Box>
             <Box
               as={motion.div}
