@@ -118,7 +118,8 @@ const data = {
         // "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
       about:
         "Foundations of Project Management",
-        to: "../../public/images/Foundation of PM.jpg",
+        to: "public/images/Foundation of PM.jpg",
+       
     },
     {
       id: 2,
@@ -126,21 +127,21 @@ const data = {
         // "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
       about:
         "Project Initiation: Starting a Successful Project",
-        to: "../../public/images/Project_Initiation.jpg",
+        to: "public/images/Project_Initiation.jpg",
     },
     {
       id: 3,
       image: project_planning,
         // "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
       about: "Project Planning: Putting It All Together",
-      to: "../../public/images/Project_Planning.jpg",
+      to: "public/images/Project_Planning.jpg",
     },
     {
       id: 4,
       image: project_execution,
         // "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
       about: "Project Execution: Running the Project",
-      to: "../../public/images/Project_Execution.jpg",
+      to: "public/images/Project_Execution.jpg",
     },
     {
       id: 5,
@@ -148,7 +149,7 @@ const data = {
         // "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
       about:
         "Capstone: Applying Project Management in the Real World",
-        about: "../../public/images/Capstone_Project.jpg",
+        about: "public/images/Capstone_Project.jpg",
     },
     {
       id: 6,
@@ -156,7 +157,7 @@ const data = {
         // "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
       about:
         "Agile Project Management",
-        to: "../../public/images/Agile_PM.jpg",
+        to: "public/images/Agile_PM.jpg",
     },
     {
       id: 7,
@@ -164,7 +165,7 @@ const data = {
         // "https://res.cloudinary.com/dbxvk3apv/image/upload/v1694025919/Metaversus/image_6_qaflpi.webp",
       about:
         "Agile, SCRUM, and Kanban Foundations",
-        to: "../../public/images/ASK_Foundation_page.jpg",
+        to: "public/images/ASK_Foundation_page.jpg",
     },
     // {
     //   id: 8,
