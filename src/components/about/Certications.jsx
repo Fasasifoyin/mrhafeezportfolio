@@ -51,9 +51,10 @@ const Certications = () => {
                           justifySelf={"center"}
                         >
                           <Box
-                            w={{ base: "80px", md: "100px" }}
-                            h={{ base: "55px", md: "75px" }}
+                            w={{ base: "100%", md: "100%" }}
+                            h={{ base: "100%", md: "100%" }}
                             mb={"15px"}
+                            // outline={`1px solid red`}
                           >
                             
                             <a href={each.to} target="_blank">
