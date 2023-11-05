@@ -51,16 +51,21 @@ const Certications = () => {
                           justifySelf={"center"}
                         >
                           <Box
-                            w={{ base: "80px", md: "100px" }}
-                            h={{ base: "55px", md: "75px" }}
+                            w={{ base: "100%", md: "100%" }}
+                            h={{ base: "100%", md: "100%" }}
                             mb={"15px"}
+                            // outline={`1px solid red`}
                           >
+                            
+                            <a href={each.to} target="_blank">
                             <Image
                               w={"100%"}
                               h={"100%"}
                               objectFit={"cover"}
                               src={each.image}
                             />
+
+                            </a>
                           </Box>
                           <h6 className="tiny-text fw-600">{each.about}</h6>{" "}
                         </Flex>
